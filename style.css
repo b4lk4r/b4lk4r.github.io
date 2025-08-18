@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #121212;
+    color: #fff;
+    padding: 100px 60px 0 60px;
+    font-family: "Handjet", sans-serif;
+}
+
+.meContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myPhoto{
+    width: 200px;
+    height: 200px;
+}
+
+.meHello{
+    font-size: 32px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.meDescr{
+    font-size: 24px;
+    font-family: "Handjet", sans-serif;
+}
