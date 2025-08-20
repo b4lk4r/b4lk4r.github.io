@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/navbar.js"></script>
+    <script type="module" src="js/main.js"></script>
     <title>Алимбек Балкаров</title>
 </head>
 <body>
+<div class="container">
     <section class="me">
         <div class="meContainer">
             <div class="hello">
@@ -23,15 +25,28 @@
     <section>
         <div class="main-navbar">
             <div class="tabs">
-                <button class="navbar-button" data-active="false">Все навыки</button>
-                <button class="navbar-button" data-active="false">ВЕБ</button>
-                <button class="navbar-button" data-active="false">МОБИЛКА</button>
-                <button class="navbar-button" data-active="false">ИГРЫ</button>
-                <button class="navbar-button" data-active="false">Другие</button>
+                <button class="navbar-button filter-btn" data-category="all" data-active="false">Все навыки</button>
+                <button class="navbar-button filter-btn" data-category="web" data-active="false">ВЕБ</button>
+                <button class="navbar-button filter-btn" data-category="mobile" data-active="false">МОБИЛКА</button>
+                <button class="navbar-button filter-btn" data-category="game" data-active="false">ИГРЫ</button>
+                <button class="navbar-button filter-btn" data-category="other" data-active="false">Другие</button>
             </div>
         </div>
     </section>
-<script type="module" src="js/navbar.js"></script>
+
+    <section>
+        <div class="cards">
+            <template id="cardTemp">
+            <div class="card">
+                <div class="cardLine1">
+                    <img src="images/my_photo.png" alt="" class="cardLogo">
+                    <p class="cardHeader">WEB-DEVELOPER(FRONTEND)</p>
+                </div>
+                <p class="cardDescr">HTML, CSS, JS + REACT</p>
+            </div>
+            </template>
+        </div>
+    </section>
+</div>
 </body>
-<script type="module" src="js/navbar.js"></script>
 </html>
