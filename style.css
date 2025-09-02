@@ -311,6 +311,11 @@ body{
   margin: 0 0 0 40px;
 }
 
+.opitDescrDop{
+  font-size: 24px;
+  margin: 0 0 0 20px;
+}
+
 .link{
   color: rgb(0, 102, 255);
   text-decoration: underline;
