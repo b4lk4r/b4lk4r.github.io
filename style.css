@@ -263,7 +263,7 @@ body{
   border: 1px dashed #fff;
   border-radius: 12px;
   width: 373px;
-  height: 150px;
+  min-height: 130px;
   padding: 15px;
 }
 
@@ -291,6 +291,16 @@ body{
 @media (max-width: 767.98px) {
   .cards{
     justify-content: center;
+  }
+
+  .cardDescr{
+    margin: 29px 0 0 0;
+    font-size: 18px;
+  }
+
+  .cardHeader{
+    margin: 0 0 0 20px;
+    font-size: 25px;
   }
 }
 
