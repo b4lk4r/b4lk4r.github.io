@@ -29,5 +29,13 @@ export const promos = [
     description: "PYTHON",
     visual: "images/chatbot.png",
     categories: ["all", "other"],
+  },
+
+  {
+    toggle: true,
+    name: "MINI-APPS(TELEGRAM)",
+    description: "PYTHON",
+    visual: "images/chatbot.png",
+    categories: ["all", "other"],
   }
 ];
