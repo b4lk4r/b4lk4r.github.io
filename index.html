@@ -4,6 +4,28 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+  (function initTMA() {
+    const tg = window.Telegram && Telegram.WebApp;
+    if (!tg) return;            // сайт открыт не в Telegram — просто работаем как обычный сайт
+
+    tg.ready();                 // сообщаем клиенту, что UI готов
+    tg.expand();                // растягиваем WebView по высоте
+
+    // Применим цвета темы к корню (опционально)
+    document.documentElement.style.setProperty('--tg-bg', tg.backgroundColor);
+    document.documentElement.style.setProperty('--tg-text', tg.colorScheme === 'dark' ? '#fff' : '#000');
+
+    // Настройка главной кнопки (пример)
+    tg.MainButton.setText('Продолжить');
+    tg.MainButton.onClick(() => {
+      // при клике можете, например, собрать форму и отправить на ваш сервер
+      window.dispatchEvent(new CustomEvent('tma:main-button-click'));
+    });
+    tg.MainButton.show();
+  })();
+</script>
     <script src="js/navbar.js"></script>
     <script type="module" src="js/main.js"></script>
     <title>Алимбек Балкаров</title>
